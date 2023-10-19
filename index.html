@@ -39,7 +39,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Courses</a>
+                                <a class="nav-link" href="#courses">Courses</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About us</a>
@@ -138,6 +138,46 @@
                 </div>
             </section>
 
+            <!-- Courses -->
+            <section class="container text-center" id="courses">
+                <h3>Courses</h3>
+                <h4>We are providing</h4>
+                <div class="row mt-5">
+                    <table class="table table-striped hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </section>
+
             <!-- key persons -->
             <section class="container my-5 py-5">
                 <h3>key persons</h3>
@@ -145,69 +185,218 @@
             </section>
 
             <!-- Our Students says -->
-            <section class="container my-5 py-5">
+            <section class="container my-5 py-5 testimonials">
                 <h3>TOP STUDIYING</h3>
                 <h4>Our students say</h4>
+                <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Martin Watson</h5>
+                                    <img src="#" alt="img">
+                                    <p>There is no way I could have made the same progress learning Spanish without
+                                        using
+                                        Lingua.
+                                        The best part is now learning Spanish has become one of my biggest hobbies.</p>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- More Info(FAQ) -->
-            <section class="container">
+            <section class="container text-center my-5">
                 <h3>more info</h3>
                 <h4>Common questions</h4>
+                <div class="row mt-5">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Some placeholder content for the first accordion panel. This panel is shown by
+                                        default, thanks to the <code>.show</code> class.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Some placeholder content for the second accordion panel. This panel is hidden by
+                                        default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Some placeholder content for the first accordion panel. This panel is shown by
+                                        default, thanks to the <code>.show</code> class.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            Collapsible Group Item #2
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Some placeholder content for the second accordion panel. This panel is hidden by
+                                        default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            Collapsible Group Item #3
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
             </section>
             <!-- Free trial lession today -->
-            <section class="container my-5 py-5">
-                <h4 class="text-center">Get a free trial lesson today</h4>
+            <section class="container my-5 py-5 text-center" id="freeTrailSession">
+                <h4>Get a free trial lesson today</h4>
                 <p>Start fulfilling your language dreams with our school</p>
-                <form action="">
+                <form action="" class="mt-5">
                     <div class="row">
-                        <input type="email" name="" id="email">
+                        <input type="email" name="" id="email" placeholder="Enter your email">
                         <button type="submit">send</button>
                     </div>
                 </form>
             </section>
 
             <!-- footer -->
-            <footer class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <a href="index.html"><img src="media/png/Logo.png" alt="logo"></a>
-                        <address>
-                            Block 3, 1st Floor, Bhagyalaxmi Apartment, Opp. Model Colony, College Road, Nashik,
-                            Maharashtra 422005, INDIA
-                        </address>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="row">
-                            <ul>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Teachers</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                            <ul class="mx-auto">
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                            <ul>
+            <div class="footer">
+                <footer class="container mt-5 pt-5">
+                    <div class="row">
+                        <div class="address col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <a href="index.html"><img src="media/png/Logo.png" alt="logo"></a>
+                            <address>
+                                <small> Block 3, 1st Floor, Bhagyalaxmi Apartment, Opp. Model Colony, College Road,
+                                    Nashik,
+                                    Maharashtra 422005, INDIA</small>
+                            </address>
+                        </div>
+                        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="row">
+                                <ul>
+                                    <li><a href="#">Teachers</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                                <ul class="mx-auto">
+                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                                <!-- <ul>
                                 <li><a href="#">Terms & Conditions</a></li>
                                 <li><a href="#">Privacy policy</a></li>
-                            </ul>
+                            </ul> -->
+                            </div>
+                        </div>
+                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="row socialLinks">
+                                <a href=""><img src="media/svg/Facebook.svg" alt="Facebook"></a>
+                                <a href=""><img src="media/svg/Twitter.svg" alt="twitter"></a>
+                                <a href=""><img src="media/svg/Instagram.svg" alt="Instagram"></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="row">
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </main>
-
         <div id="chatSupport">
             <a href="https://wa.me/7083233905">
                 <!-- <img class="hey" src="media/gif/hey.gif" alt="hey">
@@ -215,11 +404,12 @@
                 <img class="message" src="media/gif/write.gif" alt="write a message">
             </a>
         </div>
-
     </div>
 
 
+    <section id="copyrights">
 
+    </section>
 
 
 
@@ -232,7 +422,6 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4438748f4f.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
-
 
 </body>
 

@@ -81,3 +81,74 @@ header .container {
         margin-bottom: 3%;
     }
 }
+
+.card-header {
+    border: none;
+}
+
+.accordion .card {
+    margin: 15px auto;
+}
+
+.accordion>.card>.card-header {
+    margin-bottom: 0px;
+}
+
+.btn-link.focus,
+.btn-link:focus {
+    text-decoration: none;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+#accordionExample .card {
+    border-radius: 25px;
+    border: 1px solid $lightBlue;
+}
+
+.blue {
+    background-color: $blue;
+    color: white;
+
+    button {
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#freeTrailSession {
+    form .row {
+        justify-content: center;
+        column-gap: 30px;
+        input{
+            @include btn();
+            background-color: white;
+            border: 1px solid $blue;
+            color: $text;
+            &:focus-visible{
+                border: none;
+            }
+        }
+        button{
+            @include btn();
+         
+        }
+    }
+}
+
+.testimonials{
+    .row{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            width: 50%;
+        }
+    }
+}
