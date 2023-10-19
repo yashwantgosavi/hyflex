@@ -1,7 +1,20 @@
-nav{
+nav {
     height: 80px;
-    a{
+
+    a {
         color: $text;
         margin: 1rem;
+    }
+
+    button {
+        @include btn();
+        background-color: #fff;
+        color: $blue;
+        border: 1px solid $lightBlue;
+        &:hover{
+            border: none;
+            background-color: $blue;
+            color: $white;
+        }
     }
 }

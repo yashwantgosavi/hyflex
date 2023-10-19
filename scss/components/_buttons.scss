@@ -1,0 +1,14 @@
+@mixin btn() {
+    background-color: $blue;
+    padding: 18px 32px;
+    border-radius: 73px;
+    border: none;
+    color: white;
+
+    &:hover {
+        background-color: transparent;
+        color: $blue;
+        border: 1px solid $blue;
+        @include transition1s();
+    }
+}

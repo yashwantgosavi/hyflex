@@ -1,0 +1,10 @@
+@mixin headerCards(){
+    width: fit-content;
+    border-radius: 12px;
+    background-color: #fff;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

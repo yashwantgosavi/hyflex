@@ -3,10 +3,29 @@
 $poppins: 'Poppins', sans-serif;
 
 
-*{
-font-family: $poppins;
+* {
+    font-family: $poppins;
 }
 
-p,a{
+p,
+a {
     font-size: 16px;
+}
+
+
+h3 {
+    color: $text;
+    font-size: 18px;
+    font-style: normal;
+    // font-weight: 700;
+    line-height: 190%;
+    /* 34.2px */
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 130%;
 }

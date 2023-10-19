@@ -1,18 +1,83 @@
-header{
+header .container {
     height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    h2{
-        font-size: 3rem;
-        font-weight:400;
+
+    div {
+        img {
+            width: 80%;
+        }
     }
-span{
-    color: $blue;
-}
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    span {
+        color: $blue;
+        font-weight: 500;
+    }
+
+    button {
+        @include btn();
+    }
+
+    p {
+        margin-top: 18px;
+        margin-bottom: 36px;
+    }
+
 }
 
-.head{
+.head {
     background-color: $white;
     border-radius: 25px;
+}
+
+
+#whyChooseUs {
+    .card {
+        border: none;
+    }
+
+    .whyChooseUsCards {
+        justify-content: center;
+        column-gap: 30px;
+
+        img {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}
+
+
+#chatSupport {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    border-radius: 20px;
+    background-color: $blue;
+    width: 70px;
+    height: 70px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+
+    img {
+        width: 45px;
+        margin-bottom: 3%;
+    }
 }
