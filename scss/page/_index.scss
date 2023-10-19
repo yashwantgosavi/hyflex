@@ -1,0 +1,18 @@
+header{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+        font-weight:400;
+    }
+span{
+    color: $blue;
+}
+}
+
+.head{
+    background-color: $white;
+    border-radius: 25px;
+}
