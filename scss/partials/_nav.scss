@@ -4,6 +4,9 @@ nav {
     a {
         color: $text;
         margin: 1rem;
+        &:hover{
+            text-decoration: underline !important;
+        }
     }
 
     button {
