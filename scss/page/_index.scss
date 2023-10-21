@@ -59,7 +59,7 @@ header .container {
     bottom: 2%;
     right: 1%;
     border-radius: 20px;
-    background-color: $blue;
+    background-color: $lightBlue;
     width: 70px;
     height: 70px;
 
@@ -77,7 +77,7 @@ header .container {
     }
 
     img {
-        width: 45px;
+        width: 38px;
         margin-bottom: 3%;
     }
 }
@@ -126,28 +126,32 @@ header .container {
     form .row {
         justify-content: center;
         column-gap: 30px;
-        input{
+
+        input {
             @include btn();
             background-color: white;
             border: 1px solid $blue;
             color: $text;
-            &:focus-visible{
+
+            &:focus-visible {
                 border: none;
             }
         }
-        button{
+
+        button {
             @include btn();
-         
+
         }
     }
 }
 
-.testimonials{
-    .row{
+.testimonials {
+    .row {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        div{
+
+        div {
             width: 50%;
         }
     }
