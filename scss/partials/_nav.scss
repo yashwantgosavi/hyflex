@@ -4,7 +4,8 @@ nav {
     a {
         color: $text;
         margin: 1rem;
-        &:hover{
+
+        &:hover {
             text-decoration: underline !important;
         }
     }
@@ -14,10 +15,16 @@ nav {
         background-color: #fff;
         color: $blue;
         border: 1px solid $lightBlue;
-        &:hover{
+
+        &:hover {
             border: none;
             background-color: $blue;
             color: $white;
         }
     }
+}
+
+
+.navbar-toggler {
+    border-color: $blue;
 }
