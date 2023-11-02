@@ -12,27 +12,32 @@
                 font-size: 2rem;
             }
 
-            #right,
-            #left {
-                margin: 10% auto;
-            }
+            .text-right {
+                text-align: center !important;
+                margin-top: 10%;
 
-            #right {
-                .col-sm-12 {
-                    text-align: center !important;
-
-                    img {
-                        width: 100%;
-                    }
+                img {
+                    width: 100%;
                 }
             }
         }
     }
 
+    h4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .whyChooseUsCards {
+        padding-top: 0rem !important;
+        margin-top: 3rem !important;
+    }
+
     .card {
         width: 100% !important;
         margin: 8% auto;
-        p{
+
+        p {
             text-align: justify;
         }
     }
@@ -42,10 +47,96 @@
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        margin-top: 5%;
+
+        .container {
+            text-align: center !important;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .text-right {
+                text-align: center !important;
+                margin-top: 10%;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .whyChooseUsCards {
+        padding-top: 0rem !important;
+        margin-top: 3rem !important;
+    }
+
+    .card {
+        width: 100% !important;
+        margin: 8% auto;
+
+        p {
+            text-align: center;
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        .row {
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center !important;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .text-right {
+                text-align: center !important;
+                margin-top: 10%;
+
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .whyChooseUsCards {
+        padding-top: 0rem !important;
+        margin-top: 3rem !important;
+    }
+
+    .card {
+        width: 100% !important;
+        margin: 8% auto;
+
+        p {
+            text-align: center;
+        }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
