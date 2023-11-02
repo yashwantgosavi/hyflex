@@ -4,6 +4,10 @@ header .container {
     flex-direction: row;
     align-items: center;
 
+    .row {
+        align-items: center;
+    }
+
     div {
         img {
             width: 80%;

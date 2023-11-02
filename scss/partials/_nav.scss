@@ -10,7 +10,7 @@ nav {
         }
     }
 
-    button {
+    .btn-outline-success {
         @include btn();
         background-color: #fff;
         color: $blue;
@@ -26,5 +26,26 @@ nav {
 
 
 .navbar-toggler {
-    border-color: $blue;
+    border-color: $blue !important;
+}
+.show{
+    background-color: $white;
+    @include shadow1();
+    border-radius: 25px;
+    padding: 30px 15px;
+    li a{
+        border-bottom: 1px solid $lightBlue;
+    }
+    button{
+        margin-left: 15px;
+    }
+    .btn-outline-success{
+        color: $blue;
+        border-color: $blue;
+        @include btn();
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+    }
 }
