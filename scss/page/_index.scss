@@ -50,6 +50,10 @@ header .container {
         justify-content: center;
         column-gap: 30px;
 
+        .card:hover {
+            border: 1px solid $blue;
+        }
+
         img {
             width: fit-content;
             margin: auto;

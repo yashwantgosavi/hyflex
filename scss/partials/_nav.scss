@@ -1,13 +1,9 @@
 nav {
     height: 80px;
-
+z-index: 1000;
     a {
         color: $text;
         margin: 1rem;
-
-        &:hover {
-            text-decoration: underline !important;
-        }
     }
 
     .btn-outline-success {

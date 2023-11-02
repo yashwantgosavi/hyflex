@@ -150,10 +150,14 @@ a {
 
 body::-webkit-scrollbar {
 	width: 0.5em;
-  }
-   
+}
 
-  body::-webkit-scrollbar-thumb {
+
+body::-webkit-scrollbar-thumb {
 	background-color: $voilet;
 	border-radius: 10px;
-  }
+}
+
+a:hover {
+	text-decoration: none !important;
+}
