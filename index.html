@@ -46,14 +46,14 @@
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Courses
+                                <a class="nav-link" href="#courses">Courses
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
+                                <a class="nav-link" href="#aboutUs">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Teachers</a>
+                                <a class="nav-link" href="#teachers">Teachers</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blog</a>
@@ -183,15 +183,51 @@
                     </table>
                 </div>
             </section>
+
             <!-- about us -->
             <section id="aboutUs" class="container text-center my-5 py-5">
                 <h3>About us</h3>
                 <h4>Lorem Ipsum is a Dummy text</h4>
+
             </section>
             <!-- key persons -->
             <section class="container my-5 py-5" id="teachers">
                 <h3>key persons</h3>
                 <h4>Meet our teachers</h4>
+                <div class="slider-controls">
+                    <div class="prev-button">&#9664;</div>
+                    <div class="next-button">&#9654;</div>
+                </div>  
+                <div class="card-slider">
+                    <div class="slider-container">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="media/jpg/teacher1.png" alt="Card Image 1">
+                                <h2>Card Title 1</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="card">
+                                <img src="media/jpg/teacher2.png" alt="Card Image 2">
+                                <h2>Rutuja Hardas</h2>
+                                <div>
+                                    <img src="media/png/german.png" alt="">
+                                    <p>German</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="media/jpg/teacher3.png" alt="Card Image 2">
+                                <h2>Card Title 3</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="card">
+                                <img src="media/jpg/teacher3.png" alt="Card Image 2">
+                                <h2>Card Title 3</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <!-- Add more cards here -->
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Our Students says -->
@@ -224,130 +260,92 @@
             </section>
 
             <!-- More Info(FAQ) -->
-            <section class="container text-center my-5">
-                <h3>more info</h3>
-                <h4>Common questions</h4>
-                <div class="row mt-5">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button"
-                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
-                                            Collapsible Group Item #1
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Some placeholder content for the first accordion panel. This panel is shown by
-                                        default, thanks to the <code>.show</code> class.
+            <section id="faq">
+                <div class="container">
+                    <h3>More info</h3>
+                    <h4>Common questions</h4>
+                    <div class="row my-4">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-1">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Collapsible Group Item #2
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Some placeholder content for the second accordion panel. This panel is hidden by
-                                        default.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Collapsible Group Item #3
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        And lastly, the placeholder content for the third and final accordion panel.
-                                        This panel is hidden by default.
-                                    </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left" type="button"
-                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseFour">
-                                            Collapsible Group Item #1
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Some placeholder content for the first accordion panel. This panel is shown by
-                                        default, thanks to the <code>.show</code> class.
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-2">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
                                     </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingFive">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseFive">
-                                            Collapsible Group Item #2
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Some placeholder content for the second accordion panel. This panel is hidden by
-                                        default.
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-3">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
                                     </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingSix">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                                            aria-controls="collapseSix">
-                                            Collapsible Group Item #3
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-
-                                        And lastly, the placeholder content for the third and final accordion panel.
-                                        This panel is hidden by default.
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-4">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
                                     </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-5">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="faq-card" id="faq-card-6">
+                                <div class="question">
+                                    <h2>Question 1: What is Lorem Ipsum?</h2>
+                                    <div class="toggle">
+                                        <span class="icon">+</span>
+                                    </div>
+                                </div>
+                                <div class="answer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
             <!-- Free trial lession today -->
             <section class="container my-5 py-5 text-center" id="freeTrailSession">
@@ -360,7 +358,6 @@
                     </div>
                 </form>
             </section>
-
             <!-- footer -->
             <div class="footer">
                 <footer class="container mt-5 pt-5">

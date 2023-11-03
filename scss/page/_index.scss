@@ -44,11 +44,17 @@ header .container {
 #whyChooseUs {
     .card {
         border: none;
+
+        &:hover {
+            @include shadow1();
+            border-radius: 25px;
+        }
     }
 
     .whyChooseUsCards {
         justify-content: center;
         column-gap: 30px;
+
         img {
             width: fit-content;
             margin: auto;
@@ -159,3 +165,46 @@ header .container {
         }
     }
 }
+
+#faq {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-card {
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 25px;
+        padding: 3%;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .answer {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .icon {
+        font-size: 20px;
+        color: white;
+    }
+
+    .toggle {
+        background-color: $blue;
+        padding: 5px 10px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
