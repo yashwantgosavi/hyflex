@@ -208,3 +208,54 @@ header .container {
 }
 
 
+.testimonial-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    max-width: 100%;
+    /* Adjust this to your preferred width */
+
+
+    .slide {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .image {
+        flex: 1;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .testimonial {
+        flex: 2;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .slider-controller {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #999;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background-color: #333;
+    }
+}

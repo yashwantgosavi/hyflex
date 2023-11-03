@@ -121,3 +121,38 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
         sliderContainer.style.transform = `translateX(${offset}px)`;
     });
 });
+
+
+// testimonials slider
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+  
+    let currentSlide = 0;
+  
+    dots[currentSlide].classList.add("active");
+  
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        goToSlide(index);
+      });
+    });
+  
+    function goToSlide(slideIndex) {
+      slides[currentSlide].classList.remove("active");
+      dots[currentSlide].classList.remove("active");
+  
+      slides[slideIndex].classList.add("active");
+      dots[slideIndex].classList.add("active");
+  
+      currentSlide = slideIndex;
+    }
+  
+    function nextSlide() {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      goToSlide(nextIndex);
+    }
+  
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+  });
+  
