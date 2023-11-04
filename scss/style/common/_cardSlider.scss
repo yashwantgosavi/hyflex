@@ -1,48 +1,48 @@
-.card-slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
 
-
-    .slider-container {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: nowrap;
-        column-gap: 70px;
-        width: 100%;
-    }
-
-    .card {
-        box-sizing: border-box;
-        border: none;
-
-        div {
-            display: flex;
-            flex-direction: row;
-            vertical-align: center;
-
-            img {
-                width: 30px;
-                height: auto;
-            }
-        }
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Define styles for h2 and a tags as needed */
-    
-}
 #teachers{
     position: relative;
-
+    .card-slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    
+    
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+    
+        .cards {
+            display: flex;
+            flex-wrap: nowrap;
+            column-gap: 70px;
+            width: 100%;
+        }
+    
+        .card {
+            box-sizing: border-box;
+            border: none;
+    
+            div {
+                display: flex;
+                flex-direction: row;
+                vertical-align: center;
+    
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+    
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    
+        /* Define styles for h2 and a tags as needed */
+        
+    }
 }
 .slider-controls {
     position: absolute;

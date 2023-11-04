@@ -87,6 +87,23 @@
             text-align: center;
         }
     }
+#coursesDropdown{
+    padding: 6% 5%;
+    .ab{
+        row-gap: 60px;
+    }
+   .left{
+    padding: 0px;
+    h2{
+        font-size: 2rem;
+    }
+   }
+   h2{
+    font-size: 1.5rem;
+   }
+}
+
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -139,7 +156,44 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px)and (max-width:1400px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    #coursesDropdown {
+        .left {
+            img {
+                width: 250px !important;
+            }
+
+            h2 {
+                font-weight: 500;
+            }
+        }
+    }
+
+    #teachers {
+        .card {
+            width: 100%;
+        }
+    }
+
+    #faq {
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .faq-card {
+            padding: 4%;
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .card-slider .card {

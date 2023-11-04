@@ -5,7 +5,11 @@ footer {
 
     .socialLinks {
         justify-content: space-around;
-
+a{
+    @include btn2();
+    width: 45px;
+    height: 45px;
+}
      
     }
 
