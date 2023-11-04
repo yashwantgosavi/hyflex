@@ -3,14 +3,19 @@ footer {
         color: $text;
     }
 
+    .logo img {
+        width: 100px;
+    }
+
     .socialLinks {
         justify-content: space-around;
-a{
-    @include btn2();
-    width: 45px;
-    height: 45px;
-}
-     
+
+        a {
+            @include btn2();
+            width: 45px;
+            height: 45px;
+        }
+
     }
 
     ul {
@@ -21,4 +26,3 @@ a{
         }
     }
 }
-
